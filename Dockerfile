@@ -6,6 +6,6 @@ USER xtreamcodes
 WORKDIR /home/xtreamcodes
 
 RUN apt-get update && apt-get upgrade -y && apt-get install libxslt1-dev libcurl3 libgeoip-dev python wget -y
-COPY install.py
+RUN install.py
 RUN python3 install itertools
 RUN python install.py
